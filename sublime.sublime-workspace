@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"remo",
+				"remove\t(): void Element"
+			],
+			[
 				"conslo",
 				"console_log"
 			],
@@ -384,10 +388,20 @@
 	"buffers":
 	[
 		{
-			"file": "src/components/AddExpensePage.js",
+			"file": "src/components/EditExpensePage.js",
 			"settings":
 			{
-				"buffer_size": 624,
+				"buffer_size": 1095,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/tests/components/EditExpensePage.test.js",
+			"settings":
+			{
+				"buffer_size": 1022,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -491,11 +505,12 @@
 		"/home/dev/cursos/react/expensify-app",
 		"/home/dev/cursos/react/expensify-app/src",
 		"/home/dev/cursos/react/expensify-app/src/components",
-		"/home/dev/cursos/react/expensify-app/src/tests",
-		"/home/dev/cursos/react/expensify-app/src/tests/components"
+		"/home/dev/cursos/react/expensify-app/src/tests"
 	],
 	"file_history":
 	[
+		"/home/dev/cursos/react/expensify-app/src/tests/components/AddExpensePage.test.js",
+		"/home/dev/cursos/react/expensify-app/src/components/AddExpensePage.js",
 		"/home/dev/odoo/marketplace/docker-compose.yml",
 		"/home/dev/odoo/marketplace/addons/custom_marketplace/views/portal_order.xml",
 		"/home/dev/odoo/marketplace/addons/custom_marketplace/static/src/js/scripts_websale.js",
@@ -586,7 +601,6 @@
 		"/home/dev/cursos/react/expensify-app/src/components/ExpenseListFilters.js",
 		"/home/dev/cursos/react/expensify-app/src/reducers/filters.js",
 		"/home/dev/cursos/react/expensify-app/src/store/configureStore.js",
-		"/home/dev/cursos/react/expensify-app/src/components/AddExpensePage.js",
 		"/home/dev/cursos/react/expensify-app/src/components/EditExpensePage.js",
 		"/home/dev/cursos/react/expensify-app/src/components/ExpenseDashboardPage.js",
 		"/home/dev/cursos/react/expensify-app/src/components/ExpenseForm.js",
@@ -622,8 +636,7 @@
 		"/home/dev/odoo/marketplace/addons/custom_marketplace/views/print_order.xml",
 		"/home/dev/odoo/marketplace/odoo/addons/sale/models/res_config_settings.py",
 		"/home/dev/odoo/marketplace/odoo/addons/sale/data/ir_sequence_data.xml",
-		"/home/dev/odoo/marketplace/addons/custom_marketplace/data/sequence.xml",
-		"/home/dev/odoo/marketplace/enterprise/print_sale/models/sale_order.py"
+		"/home/dev/odoo/marketplace/addons/custom_marketplace/data/sequence.xml"
 	],
 	"find":
 	{
@@ -658,37 +671,71 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/components/AddExpensePage.js",
-					"semi_transient": true,
+					"file": "src/components/EditExpensePage.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 624,
+						"buffer_size": 1095,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								447,
-								447
+								489,
+								489
 							]
 						],
 						"settings":
 						{
-							"SL.76.region_keys":
+							"SL.78.region_keys":
 							[
 							],
 							"git_gutter_is_enabled": true,
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/tests/components/EditExpensePage.test.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1022,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1013,
+								1013
+							]
+						],
+						"settings":
+						{
+							"SL.79.region_keys":
+							[
+							],
+							"git_gutter_is_enabled": true,
+							"open_with_edit": true,
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 51.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
