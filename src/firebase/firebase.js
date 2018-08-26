@@ -12,23 +12,55 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-database.ref().set({
-	name: 'Gabriel Balog',
-	age: 21,
-	stressLevel: 6,
-	job: {
-		title: 'Software Developer',
-		company: 'Google'
-	},
-	location: {
-		city: 'São Paulo',
-		country: 'Brazil'
-	}
-}).then(() => {
-	console.log('Data is saved');
-}).catch((e) => {
-	console.log('This failed.', e);
+database.ref().on('value', (snapshot) => {
+	const val = snapshot.val();
+	console.log(`${val.name} is a ${val.job.title} at ${val.job.company}.`);
 });
+
+// const onValueChange = database.ref().on('value', (snapshot) => {
+// 	console.log(snapshot.val());
+// }, (e) => {
+// 	console.log('Error with data fethcing', e);
+// });
+
+// setTimeout(() => {
+// 	database.ref('age').set(29);
+// }, 3000);
+
+// setTimeout(() => {
+// 	database.ref().off(onValueChange);
+// }, 7000);
+
+// setTimeout(() => {
+// 	database.ref('age').set(30);
+// }, 10000);
+
+// database.ref('location/city')
+// 	.once('value')
+// 	.then((snapshot) => {
+// 		const val = snapshot.val();
+// 		console.log(val)
+// 	}).catch((e) => {
+// 		console.log('Error fetching data', e);
+// 	});
+
+// database.ref().set({
+// 	name: 'Gabriel Balog',
+// 	age: 21,
+// 	stressLevel: 6,
+// 	job: {
+// 		title: 'Software Developer',
+// 		company: 'Google'
+// 	},
+// 	location: {
+// 		city: 'São Paulo',
+// 		country: 'Brazil'
+// 	}
+// }).then(() => {
+// 	console.log('Data is saved');
+// }).catch((e) => {
+// 	console.log('This failed.', e);
+// });
 
 // database.ref('isSingle').set(null);
 
@@ -40,8 +72,8 @@ database.ref().set({
 // 		console.log('Did not remove data.', e);
 // 	});
 
-database.ref().update({
-	stressLevel: 9,
-	'job/company': 'Amazon',
-	'location/city': 'Campinas'
-})
+// database.ref().update({
+// 	stressLevel: 9,
+// 	'job/company': 'Amazon',
+// 	'location/city': 'Campinas'
+// });
