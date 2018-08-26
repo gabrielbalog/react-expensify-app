@@ -12,10 +12,69 @@ firebase.initializeApp(config);
 
 const database = firebase.database();
 
-database.ref().on('value', (snapshot) => {
-	const val = snapshot.val();
-	console.log(`${val.name} is a ${val.job.title} at ${val.job.company}.`);
+
+database.ref('notes/-LKrURReOsKiVQHHfu9R').remove();
+
+database.ref('expenses').push({
+	description: 'Rent',
+	note: '',
+	amount: 10281281,
+	createdAt: 39898189319
 });
+
+database.ref('expenses').push({
+	description: 'Phone Bill',
+	note: '',
+	amount: 2823,
+	createdAt: 832823
+});
+
+database.ref('expenses').push({
+	description: 'Food',
+	note: '',
+	amount: 747247,
+	createdAt: 828328
+});
+
+// database.ref('notes/-LKrURReOsKiVQHHfu9R').update({
+// 	body: 'Buy food'
+// });
+
+// database.ref('notes').push({
+// 	title: 'Another Note',
+// 	body: 'This is my note'
+// });
+
+// const firebaseNotes = {
+// 	notes: {
+// 		jjdsjsdhdsh: {
+// 			title: 'First Note',
+// 			body: 'Second Note'
+// 		},
+// 		dijijfsjisji: {
+// 			title: 'Another Note',
+// 			body: 'This is my note'
+// 		}
+// 	}
+// };
+
+// const notes = [{
+// 	id: '12',
+// 	title: 'First Note',
+// 	body: 'This is my note'
+// }, {
+// 	id: '9qie9ee',
+// 	title: 'Another note',
+// 	body: 'This is my note'
+// }];
+
+// database.ref('notes').set(note);
+// database.ref('notes/12')
+
+// database.ref().on('value', (snapshot) => {
+// 	const val = snapshot.val();
+// 	console.log(`${val.name} is a ${val.job.title} at ${val.job.company}.`);
+// });
 
 // const onValueChange = database.ref().on('value', (snapshot) => {
 // 	console.log(snapshot.val());
