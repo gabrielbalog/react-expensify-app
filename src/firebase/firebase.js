@@ -10,6 +10,23 @@ const config = {
 };
 firebase.initializeApp(config);
 
-firebase.database().ref().set({
-	name: 'Gabriel Balog'
+const database = firebase.database();
+
+database.ref().set({
+	name: 'Gabriel Balog',
+	age: 21,
+	isSingle: true,
+	location: {
+		city: 'São Paulo',
+		country: 'Brazil'
+	}
+});
+
+// database.ref().set('This is my data');
+
+database.ref('age').set(22);
+database.ref('location/city').set('Santo André');
+database.ref('attributes').set({
+	height: 1.80,
+	weight: 80	
 });
