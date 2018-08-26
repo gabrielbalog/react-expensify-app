@@ -15,26 +15,52 @@ const database = firebase.database();
 
 database.ref('notes/-LKrURReOsKiVQHHfu9R').remove();
 
-database.ref('expenses').push({
-	description: 'Rent',
-	note: '',
-	amount: 10281281,
-	createdAt: 39898189319
+// child_removed
+database.ref('expenses').on('child_removed', (snapshot) => {
+	console.log(snapshot.key, snapshot.val());
 });
 
-database.ref('expenses').push({
-	description: 'Phone Bill',
-	note: '',
-	amount: 2823,
-	createdAt: 832823
+// child_changed
+database.ref('expenses').on('child_changed', (snapshot) => {
+	console.log(snapshot.key, snapshot.val());
 });
 
-database.ref('expenses').push({
-	description: 'Food',
-	note: '',
-	amount: 747247,
-	createdAt: 828328
+// child_added
+database.ref('expenses').on('child_added', (snapshot) => {
+	console.log(snapshot.key, snapshot.val());
 });
+
+// database.ref('expenses').on('value', (snapshot) => {
+// 	const expenses = [];
+
+// 	snapshot.forEach((childSnapshot) => {
+// 		expenses.push({
+// 			id: childSnapshot.key,
+// 			...childSnapshot.val()
+// 		});
+// 	});
+// 	console.log(expenses)
+// });
+
+// database.ref('expenses').once('value', (snapshot) => {
+	// const expenses = [];
+
+	// snapshot.forEach((childSnapshot) => {
+	// 	expenses.push({
+	// 		id: childSnapshot.key,
+	// 		...childSnapshot.val()
+	// 	});
+	// });
+
+// 	console.log(expenses)
+// });
+
+// database.ref('expenses').push({
+// 	description: 'Rent',
+// 	note: '',
+// 	amount: 10281281,
+// 	createdAt: 39898189319
+// });
 
 // database.ref('notes/-LKrURReOsKiVQHHfu9R').update({
 // 	body: 'Buy food'
