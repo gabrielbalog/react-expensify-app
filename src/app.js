@@ -12,11 +12,13 @@ import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from './firebase/firebase';
 
 const store = configureStore();
+
 const jsx = (
 	<Provider store={store}>
 	<AppRouter />
 	</Provider>
 	);
+
 let hasRendered = false;
 const renderApp = () => {
 	if (!hasRendered) {
