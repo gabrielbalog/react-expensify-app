@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"conten",
+				"_content-container.scss"
+			],
+			[
+				"compone",
+				"components/"
+			],
+			[
+				"Logi",
+				"LoginPage"
+			],
+			[
+				"data",
+				"database"
+			],
+			[
 				"expe",
 				"expenseData"
 			],
@@ -70,10 +94,6 @@
 			[
 				"sha",
 				"sha256"
-			],
-			[
-				"data",
-				"datas_fname"
 			],
 			[
 				"render",
@@ -407,14 +427,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/actions/expenses.js",
-			"settings":
-			{
-				"buffer_size": 1252,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -514,19 +526,45 @@
 	[
 		"/home/dev/cursos/react/expensify-app",
 		"/home/dev/cursos/react/expensify-app/src",
-		"/home/dev/cursos/react/expensify-app/src/actions",
-		"/home/dev/cursos/react/expensify-app/src/tests",
-		"/home/dev/cursos/react/expensify-app/src/tests/actions",
-		"/home/dev/cursos/react/expensify-app/src/tests/reducers"
+		"/home/dev/cursos/react/expensify-app/src/components",
+		"/home/dev/cursos/react/expensify-app/src/routers",
+		"/home/dev/cursos/react/expensify-app/src/styles",
+		"/home/dev/cursos/react/expensify-app/src/styles/base",
+		"/home/dev/cursos/react/expensify-app/src/styles/components"
 	],
 	"file_history":
 	[
+		"/home/dev/cursos/react/expensify-app/src/styles/components/_box-layout.scss",
+		"/home/dev/cursos/react/expensify-app/src/styles/base/_settings.scss",
+		"/home/dev/cursos/react/expensify-app/src/styles/components/_button.scss",
+		"/home/dev/cursos/react/expensify-app/src/styles/base/_base.scss",
+		"/home/dev/cursos/react/expensify-app/src/styles/components/_content-container.scss",
+		"/home/dev/cursos/react/expensify-app/src/styles/components/_page-header.scss",
+		"/home/dev/cursos/react/expensify-app/src/components/ExpenseSummary.js",
+		"/home/dev/cursos/react/expensify-app/src/styles/components/_header.scss",
+		"/home/dev/cursos/react/expensify-app/src/styles/styles.scss",
+		"/home/dev/cursos/react/expensify-app/src/components/Header.js",
+		"/home/dev/cursos/react/expensify-app/src/components/LoginPage.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/actions/expenses.test.js",
-		"/home/dev/cursos/react/expensify-app/src/tests/reducers/expenses.test.js",
-		"/home/dev/cursos/react/expensify-app/src/app.js",
-		"/home/dev/cursos/react/expensify-app/src/reducers/expenses.js",
 		"/home/dev/cursos/react/expensify-app/src/actions/expenses.js",
+		"/home/dev/cursos/react/expensify-app/src/routers/AppRouter.js",
+		"/home/dev/cursos/react/expensify-app/src/routers/PrivateRoute.js",
+		"/home/dev/cursos/react/expensify-app/src/routers/PublicRoute.js",
+		"/home/dev/cursos/react/expensify-app/src/app.js",
+		"/home/dev/cursos/react/expensify-app/src/actions/auth.js",
+		"/home/dev/cursos/react/expensify-app/src/reducers/auth.js",
+		"/home/dev/cursos/react/expensify-app/src/tests/actions/auth.test.js",
+		"/home/dev/cursos/react/expensify-app/src/tests/reducers/auth.test.js",
+		"/home/dev/cursos/react/expensify-app/src/store/configureStore.js",
+		"/home/dev/cursos/react/expensify-app/src/tests/components/Header.test.js",
+		"/home/dev/cursos/react/expensify-app/src/tests/components/LoginPage.test.js",
 		"/home/dev/cursos/react/expensify-app/src/firebase/firebase.js",
+		"/home/dev/cursos/react/expensify-app/src/components/EditExpensePage.js",
+		"/home/dev/cursos/react/expensify-app/src/tests/components/EditExpensePage.test.js",
+		"/home/dev/cursos/react/expensify-app/src/tests/components/ExpenseForm.test.js",
+		"/home/dev/cursos/react/expensify-app/src/components/AddExpensePage.js",
+		"/home/dev/cursos/react/expensify-app/src/tests/reducers/expenses.test.js",
+		"/home/dev/cursos/react/expensify-app/src/reducers/expenses.js",
 		"/home/dev/cursos/react/expensify-app/.env.development",
 		"/home/dev/cursos/react/expensify-app/.gitignore",
 		"/home/dev/cursos/react/expensify-app/.env.test",
@@ -535,10 +573,7 @@
 		"/home/dev/cursos/react/expensify-app/src/tests/setupTests.js",
 		"/home/dev/cursos/react/expensify-app/jest.config.json",
 		"/home/dev/cursos/react/expensify-app/src/playground/promises.js",
-		"/home/dev/cursos/react/expensify-app/src/store/configureStore.js",
-		"/home/dev/cursos/react/expensify-app/src/components/AddExpensePage.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/components/AddExpensePage.test.js",
-		"/home/dev/cursos/react/expensify-app/src/components/ExpenseSummary.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/components/ExpenseSummary.test.js",
 		"/home/dev/cursos/react/expensify-app/src/components/ExpenseDashboardPage.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/selectors/expenses-total.test.js",
@@ -552,8 +587,6 @@
 		"/home/dev/cursos/react/expensify-app/src/tests/fixtures/filters.js",
 		"/home/dev/cursos/react/expensify-app/src/components/ExpenseListFilters.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/components/ExpenseListFilters.test.js",
-		"/home/dev/cursos/react/expensify-app/src/components/EditExpensePage.js",
-		"/home/dev/cursos/react/expensify-app/src/tests/components/EditExpensePage.test.js",
 		"/home/dev/odoo/marketplace/docker-compose.yml",
 		"/home/dev/odoo/marketplace/addons/custom_marketplace/views/portal_order.xml",
 		"/home/dev/odoo/marketplace/addons/custom_marketplace/static/src/js/scripts_websale.js",
@@ -620,35 +653,15 @@
 		"/home/dev/odoo/marketplace/addons/odoo_marketplace/models/res_users.py",
 		"/home/dev/odoo/marketplace/odoo/addons/auth_crypt/__manifest__.py",
 		"/home/dev/cursos/react/expensify-app/src/tests/components/ExpenseListItem.test.js",
-		"/home/dev/cursos/react/expensify-app/src/tests/components/Header.test.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/components/ExpenseList.test.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/components/__snapshots__/ExpenseList.test.js.snap",
 		"/home/dev/cursos/react/expensify-app/src/components/ExpenseList.js",
-		"/home/dev/cursos/react/expensify-app/src/components/Header.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/selectors/expenses.test.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/fixtures/expenses.js",
 		"/home/dev/cursos/react/expensify-app/src/actions/filters.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/actions/filters.test.js",
 		"/home/dev/cursos/react/expensify-app/src/tests/reducers/filters.test.js",
-		"/home/dev/cursos/react/expensify-app/src/playground/redux-expensify.js",
-		"/home/dev/cursos/react/expensify-app/src/playground/destructuring.js",
-		"/home/dev/cursos/react/expensify-app/.babelrc",
-		"/home/dev/cursos/react/expensify-app/src/tests/add.test.js",
-		"/home/dev/cursos/react/expensify-app/src/selectors/expenses.js",
-		"/home/dev/cursos/react/expensify-app/src/reducers/filters.js",
-		"/home/dev/cursos/react/expensify-app/src/components/ExpenseForm.js",
-		"/home/dev/cursos/react/expensify-app/src/components/HelpPage.js",
-		"/home/dev/cursos/react/expensify-app/src/components/NotFoundPage.js",
-		"/media/dev/3ADE71B051F3D09E/Udemy/React/The Complete React Web Developer Course (with Redux)/11. React with Redux/r-13-11-edit-expense/src/selectors/expenses.js",
-		"/home/dev/cursos/react/boilerplate-v1/webpack.config.js",
-		"/home/dev/cursos/react/expensify-app/src/playground/hoc.js",
-		"/home/dev/cursos/react/boilerplate-v1/src/app.js",
-		"/home/dev/cursos/react/expensify-app/src/playground/redux-101.js",
-		"/home/dev/odoo/marketplace/odoo/odoo/addons/mail/static/src/less/client_action.less",
-		"/home/dev/odoo/marketplace/odoo/addons/sale/models/sale.py",
-		"/home/dev/odoo/marketplace/odoo/addons/sale/controllers/portal.py",
-		"/home/dev/odoo/marketplace/odoo/odoo/addons/sale/views/sale_portal_templates.xml",
-		"/home/dev/odoo/marketplace/odoo/addons/account/controllers/portal.py"
+		"/home/dev/cursos/react/expensify-app/src/playground/redux-expensify.js"
 	],
 	"find":
 	{
@@ -667,6 +680,9 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"PrivateRoute",
+			"editExpense",
+			"removeExpense",
 			"process.env.FIREBASE_DATABASE_URL",
 			"FIREBASE_DATABASE_URL",
 			"databaseURL",
@@ -688,6 +704,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"PublicRoute",
+			"startEditExpense",
+			"startRemoveExpense",
 			" ",
 			"startAddExpense"
 		],
@@ -700,43 +719,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/actions/expenses.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1252,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								553,
-								553
-							]
-						],
-						"settings":
-						{
-							"SL.129.region_keys":
-							[
-							],
-							"git_gutter_is_enabled": true,
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -791,7 +775,7 @@
 	"project": "sublime.sublime-project",
 	"replace":
 	{
-		"height": 95.0
+		"height": 96.0
 	},
 	"save_all_on_build": true,
 	"select_file":
