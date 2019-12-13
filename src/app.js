@@ -11,6 +11,7 @@ import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css';
 import { firebase } from './firebase/database';
 import LoadingPage from './components/LoadingPage';
+import 'react-dates/initialize';
 
 const store = configureStore();
 
