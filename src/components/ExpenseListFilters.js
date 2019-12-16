@@ -26,7 +26,6 @@ export class ExpenseListFilters extends React.Component {
   };
   
   render() {
-    console.log(this.props.filters.startDate);
     return (
       <div className="content-container">
         <div className="input-group">
