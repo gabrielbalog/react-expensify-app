@@ -7,7 +7,7 @@ export const login = (uid) => ({
 
 export const startLogin = () => {
   return () => {
-    return auth().signInWithPopup(googleAuthProvider);
+    return firebase.auth().signInWithPopup(googleAuthProvider);
   };
 };
 
@@ -17,6 +17,6 @@ export const logout = () => ({
 
 export const startLogout = () => {
 	return () => {
-		return auth().signOut();
+		return firebase.auth().signOut();
 	}
 }
