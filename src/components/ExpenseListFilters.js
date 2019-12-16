@@ -24,6 +24,7 @@ export class ExpenseListFilters extends React.Component {
       this.props.sortByAmount();
     }
   };
+  
   render() {
     return (
       <div className="content-container">
@@ -50,6 +51,8 @@ export class ExpenseListFilters extends React.Component {
           <div className="input-group__item">
             <DateRangePicker
               startDate={this.props.filters.startDate}
+              startDateId="start"
+              endDateId="end"
               endDate={this.props.filters.endDate}
               onDatesChange={this.onDatesChange}
               focusedInput={this.state.calendarFocused}
